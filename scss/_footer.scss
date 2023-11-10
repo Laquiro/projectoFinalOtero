@@ -1,0 +1,47 @@
+@mixin absolutePos {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+footer {
+    height: 175px;
+    border-top: 10px #f7f7f7 groove;
+    border-bottom: 10px rgb(150, 150, 150) groove;
+    background-color: $color-oscuro;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    nav {
+        margin-left: 3px;
+        margin-bottom: 35px;
+        margin-top: 20px;
+
+    }
+
+
+    div {
+        @include absolutePos;
+        padding-right: 10px;
+        margin-bottom: 3px;
+
+        a {
+
+            img {
+                height: 35px;
+                border-radius: 100px;
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+
+                &:hover {
+                    filter: none;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,72 @@
+/* nodelo pc */
+
+.tarjeta {
+  flex: 0 0 calc(25% - 60px);
+  max-width: calc(25% - 20px);
+  box-sizing: border-box;
+  background-color: $color-amarillo;
+
+  &:hover {
+    box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
+    -webkit-box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
+    -moz-box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
+  }
+
+  p,
+  h5 {
+    &:hover {
+      cursor: default;
+    }
+  }
+
+
+
+  .compra {
+    background-color: #Efb810;
+    color: #080808;
+    border-color: #080808;
+
+  }
+}
+
+/* modelo tablet */
+@media (max-width: 768px) {
+  .tarjeta {
+    flex: 0 0 calc(50% - 40px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* modelo para cel */
+
+@media (max-width: 576px) {
+  .tarjeta {
+    flex: 0 0 calc(100% - 30px);
+    max-width: calc(100% - 20px);
+  }
+}
+
+.contenedorFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* modelado del boton */
+
+.ver {
+  border-radius: 50px;
+  padding: 5px 100px 5px 100px;
+  background-color: #B0870C;
+
+  color: rgb(24, 24, 24);
+  text-align: center;
+  margin: 50px;
+
+  &:hover {
+    box-shadow: 2px -2px 28px 1px rgba(255, 255, 255, 0.212);
+    -webkit-box-shadow: 2px -2px 28px 1px rgba(255, 255, 255, 0.212);
+    -moz-box-shadow: 2px -2px 28px 1px rgba(255, 255, 255, 0.212);
+  }
+}

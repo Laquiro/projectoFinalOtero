@@ -1,0 +1,27 @@
+.encabezado {
+    width: 100%;
+    max-height: 300px;
+    padding-bottom: 3px;
+    margin: auto auto 250px auto;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    color: #DB7B0B;
+    
+    background-image: url(../img/Ciceron.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: center;
+    h1{
+    &:hover{  text-shadow: 10px 5px 9px $color-blanco;
+        cursor: default;
+    }
+    }
+    h2{
+        &:hover{  text-shadow: 10px 5px 9px $color-blanco;
+cursor: default;
+        }
+    }
+}
+.baner{
+    height: 300px;
+}
