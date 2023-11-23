@@ -7,7 +7,7 @@ body {
     header {
         nav {
             button {
-                border: 0px;
+                margin-right: 25px;
 
                 &:hover {
                     background-color: $color-negrito;
@@ -16,10 +16,13 @@ body {
 
                 &:active {
                     background-color: #0d6efd;
+                    border-radius: 40%;
                 }
             }
 
             div {
+                margin-right: 10px;
+
                 ul {
                     li {
                         a {
@@ -40,7 +43,6 @@ body {
                                 -moz-box-shadow: 1px 1px 40px 1px $color-amarillo;
                                 box-shadow: 1px 1px 40px 1px $color-amarillo;
                             }
-
                         }
                     }
                 }

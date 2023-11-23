@@ -12,20 +12,42 @@
     -moz-box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
   }
 
-  p,
-  h5 {
-    &:hover {
-      cursor: default;
+  div {
+    padding: 16px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      width: 98%;
+
+      margin: auto 5% auto 5%;
+
+      &:hover {
+        cursor: default;
+      }
     }
-  }
+
+    h3 {
+      text-justify: auto;
+
+      &:hover {
+        cursor: default;
+      }
+    }
 
 
 
-  .compra {
-    background-color: #Efb810;
-    color: #080808;
-    border-color: #080808;
+    .compra {
+      margin-top: 10%;
 
+      background-color: #Efb810;
+      color: #080808;
+      border-color: #080808;
+
+
+
+    }
   }
 }
 

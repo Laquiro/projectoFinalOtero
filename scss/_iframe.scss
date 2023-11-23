@@ -8,8 +8,9 @@
     text-align: center;
 
     iframe {
-        width: 80%;
-        height: 45vh;
+        width: 90%;
+
+        aspect-ratio: 16 /9;
         margin: 25px;
     }
 }

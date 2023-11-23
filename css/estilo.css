@@ -25,7 +25,7 @@ body {
 }
 
 body header nav button {
-  border: 0px;
+  margin-right: 25px;
 }
 body header nav button:hover {
   background-color: #131313;
@@ -33,6 +33,10 @@ body header nav button:hover {
 }
 body header nav button:active {
   background-color: #0d6efd;
+  border-radius: 40%;
+}
+body header nav div {
+  margin-right: 10px;
 }
 body header nav div ul li a {
   margin: 1px;
@@ -63,7 +67,7 @@ footer {
   width: 100%;
 }
 footer nav {
-  margin-left: 3px;
+  margin-left: 10px;
   margin-bottom: 35px;
   margin-top: 20px;
 }
@@ -72,7 +76,8 @@ footer div {
   bottom: 0;
   right: 0;
   padding-right: 10px;
-  margin-bottom: 3px;
+  margin-right: 2px;
+  margin-bottom: 5px;
 }
 footer div a img {
   height: 35px;
@@ -233,11 +238,27 @@ footer div a img:hover {
   -webkit-box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
   -moz-box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
 }
-.tarjeta p:hover,
-.tarjeta h5:hover {
+.tarjeta div {
+  padding: 16px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tarjeta div p {
+  width: 98%;
+  margin: auto 5% auto 5%;
+}
+.tarjeta div p:hover {
   cursor: default;
 }
-.tarjeta .compra {
+.tarjeta div h3 {
+  text-justify: auto;
+}
+.tarjeta div h3:hover {
+  cursor: default;
+}
+.tarjeta div .compra {
+  margin-top: 10%;
   background-color: #Efb810;
   color: #080808;
   border-color: #080808;
@@ -291,30 +312,33 @@ form {
   margin: auto auto auto auto;
   overflow: auto;
 }
-
-label {
-  font-size: 24px;
-  display: inline-block;
+form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
-
-input {
-  display: inline;
+form div label {
+  padding: auto;
+  flex: 1;
+  font-size: 24px;
+  margin: auto 10px auto auto;
+}
+form div input {
+  flex: 12;
   border-radius: 50px;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
   border: 3px solid #ffffff;
-  display: inline-block;
 }
-
-textarea {
-  width: 100%;
-  box-sizing: border-box;
+form div textarea {
+  flex: auto;
   resize: none;
   background-color: rgba(175, 175, 175, 0.445);
 }
-
-input[type=submit] {
+form div input[type=submit] {
+  flex: 1;
   border-radius: 50px;
   padding: 5px 100px 5px 100px;
   background-color: rgba(168, 168, 168, 0.295);
@@ -335,8 +359,8 @@ input[type=submit] {
   text-align: center;
 }
 .contenedor iframe {
-  width: 80%;
-  height: 45vh;
+  width: 90%;
+  aspect-ratio: 16/9;
   margin: 25px;
 }
 

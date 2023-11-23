@@ -5,17 +5,16 @@
     &:hover {
         background-color: $color-arena;
         border-color: $color-amarillo;
-        transform: rotate(1deg) ;
+        transform: rotate(1deg);
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
+
     }
 }
-
-
 
 .desplegable {
     margin: auto;
 
-    background-color:$color-amarillo;
+    background-color: $color-amarillo;
 }

@@ -9,37 +9,53 @@ form {
     position: relative;
     margin: auto auto auto auto;
     overflow: auto;
-}
 
-label {
-    font-size: 24px;
-    display: inline-block;
-}
 
-input {
-    display: inline;
-    border-radius: 50px;
-    padding: 5px;
-    background-color: #00000000;
-    color: $color-blanco;
-    border: 3px solid $color-blanco;
-    display: inline-block;
-}
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
 
-textarea {
-    width: 100%;
-    box-sizing: border-box;
-    resize: none;
-    background-color: rgba(175, 175, 175, 0.445);
-}
+        label {
+            padding: auto;
+            flex: 1;
+            font-size: 24px;
+            margin: auto 10px auto auto;
+        }
 
-input[type="submit"] {
-    border-radius: 50px;
-    padding: 5px 100px 5px 100px;
-    background-color: rgba(168, 168, 168, 0.295);
-    display: inline-block;
-    cursor: pointer;
-    box-sizing: border-box;
-    position: relative;
-    color: rgb(24, 24, 24);
+
+        input {
+            flex: 12;
+            border-radius: 50px;
+            padding: 5px;
+            background-color: #00000000;
+            color: $color-blanco;
+            border: 3px solid $color-blanco;
+
+        }
+
+
+        textarea {
+            flex: auto;
+            resize: none;
+            background-color: rgba(175, 175, 175, 0.445);
+
+        }
+
+
+
+
+        input[type="submit"] {
+            flex: 1;
+            border-radius: 50px;
+            padding: 5px 100px 5px 100px;
+            background-color: rgba(168, 168, 168, 0.295);
+            display: inline-block;
+            cursor: pointer;
+            box-sizing: border-box;
+            position: relative;
+            color: rgb(24, 24, 24);
+        }
+    }
 }
